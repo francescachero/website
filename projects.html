@@ -15,6 +15,7 @@
     .page-header {
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       gap: 2.5rem;
       padding: 20px 0;
       background-color: #fff;
@@ -56,6 +57,13 @@
     .text-link-btn:hover {
       opacity: 0.6;
     }
+
+    @media (max-width: 576px) {
+      .page-header {
+        gap: 1.2rem;
+        font-size: 0.8rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -68,9 +76,9 @@
   </div>
 
   <div class="projects-content">
-    <p>I don’t have my own web design project yet, so I’ll just insert my side quest, which is my crochet projects.
-</p>
-        <img src="images/projects.png" alt="Projects" class="img-fluid mb-4">
+    <img src="images/projects.png" alt="Projects" class="img-fluid mb-4">
+    <h1>Projects</h1>
+    <p>List your projects here.</p>
     <a href="contact.html" class="text-link-btn">Next</a>
   </div>
 

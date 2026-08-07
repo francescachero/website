@@ -15,6 +15,7 @@
     .page-header {
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       gap: 2.5rem;
       padding: 20px 0;
       background-color: #fff;
@@ -125,6 +126,33 @@
     .text-link-btn:hover {
       opacity: 0.6;
     }
+
+    @media (max-width: 576px) {
+      .page-header {
+        gap: 1.2rem;
+        font-size: 0.8rem;
+      }
+
+      .nav-btn {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+      }
+
+      .down-arrow {
+        width: 44px;
+        height: 44px;
+        line-height: 42px;
+        font-size: 1.5rem;
+      }
+
+      .info-tables h2 {
+        font-size: 1.1rem;
+      }
+
+      .info-tables table {
+        font-size: 0.8rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -144,6 +172,7 @@
   <div class="info-tables" id="education">
 
     <h2>Education</h2>
+    <div class="table-responsive">
     <table class="table table-striped table-bordered align-middle">
       <thead>
         <tr>
@@ -189,6 +218,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
 
     <div class="text-center mt-4">
       <a href="#organizations" class="down-arrow" aria-label="Scroll to organizations">&#8595;</a>
@@ -199,6 +229,7 @@
   <div class="info-tables" id="organizations">
 
     <h2>Organizational and Leadership Experience</h2>
+    <div class="table-responsive">
     <table class="table table-striped table-bordered align-middle">
       <thead>
         <tr>
@@ -286,7 +317,7 @@
           </td>
         </tr>
         <tr>
-          <td>Supreme Student Government &ndash; Isaac Lopez Integrated School</td>
+          <td>Supreme Student Government &ndash; Mandaluyong College of Science and Technology</td>
           <td>Secretary</td>
           <td>2017 &ndash; 2018</td>
           <td>
@@ -298,6 +329,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
 
     <div class="text-center mt-4">
       <a href="projects.html" class="text-link-btn">View Projects</a>
